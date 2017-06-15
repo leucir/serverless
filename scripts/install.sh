@@ -1,5 +1,5 @@
 echo "Defining Openwhisk executable temp folder"
-export WSK_TEMP = "~/wsk_temp"
+export WSK_TEMP=~/wsk_temp
 
 echo "Creating folder :$WSK_TEMP"
 mkdir $WSK_TEMP
