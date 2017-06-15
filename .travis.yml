@@ -5,9 +5,10 @@ before_install:
 install:
 - "./scripts/install.sh"
 - "./scripts/config.sh"
+script: true
 deploy:
   provider: script
   skip_cleanup: true
-  script: "./buildScripts/deployDevelopment.sh"
+  script: "./scripts/deployDevelopment.sh"
   on:
     branch: master
