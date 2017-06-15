@@ -1,12 +1,11 @@
-#copy both
-#https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/OpenWhisk_CLI-linux.tgz
-#https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
+echo "Defining Openwhisk executable temp folder"
+EXPORT WSK_TEMP = "~/wsk_temp"
 
-#create temp folder
-mkdir ~/wsk_temp
+echo "Creating folder :$WSK_TEMP"
+mkdir $WSK_TEMP
 
-#install openwhisk CLI
-curl -o ~/wsk_temp/wsk -L https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
+echo "install openwhisk CLI"
+curl -o $WSK_TEMP/wsk -L https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
 
-#give access
-chmod +x ~/wsk_temp/wsk
+echo "give access wsk executable access"
+chmod +x $WSK_TEMP/wsk
