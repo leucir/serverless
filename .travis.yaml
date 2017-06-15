@@ -1,0 +1,7 @@
+sudo: true
+language: node_js
+before_install:
+- chmod -R +x scripts
+install:
+- "./scripts/install.sh"
+- "./scripts/config.sh"
