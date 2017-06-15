@@ -3,12 +3,12 @@ language: node_js
 before_install:
 - chmod -R +x scripts
 install:
-- "./scripts/install.sh"
-- "./scripts/config.sh"
+- ". ./scripts/install.sh"
+- ". ./scripts/config.sh"
 script: true
 deploy:
   provider: script
   skip_cleanup: true
-  script: "./scripts/deployDevelopment.sh"
+  script: ". ./scripts/deployDevelopment.sh"
   on:
     branch: master
