@@ -7,3 +7,6 @@ mkdir ~/wsk_temp
 
 #install openwhisk CLI
 curl -o ~/wsk_temp/wsk -L https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
+
+#give access
+chmod +x ~/wsk_temp/wsk
