@@ -3,4 +3,4 @@
 #https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
 
 #install openwhisk CLI
-curl -sL https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
+curl -o wsk -L https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
